@@ -12,7 +12,9 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=f;var e=u(require("./refs")),r=u(require("../templates/menu.hbs")),t=u(require("./menu.json"));function u(e){return e&&e.__esModule?e:{default:e}}var n=a(t.default);function a(e){return e.map(r.default).join("")}function f(){e.default.menuEl.insertAdjacentHTML("beforeend",n)}
 },{"./refs":"VyiV","../templates/menu.hbs":"dgbP","./menu.json":"NkM5"}],"Sq5u":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=d;var e=t(require("./refs"));function t(e){return e&&e.__esModule?e:{default:e}}var a={LIGHT:"light-theme",DARK:"dark-theme"};e.default.switchThemeEl.addEventListener("change",s);var l="Theme";function s(t){e.default.bodyEl.classList.contains(a.DARK)?(e.default.bodyEl.classList.remove(a.DARK),e.default.bodyEl.classList.add(a.LIGHT),localStorage.setItem(l,a.LIGHT)):(e.default.bodyEl.classList.remove(a.LIGHT),e.default.bodyEl.classList.add(a.DARK),localStorage.setItem(l,a.DARK))}function d(){var t=localStorage.getItem(l);t&&("dark-theme"===t&&e.default.switchThemeEl.setAttribute("checked",!0),e.default.bodyEl.classList.add(t))}
-},{"./refs":"VyiV"}],"Focm":[function(require,module,exports) {
-"use strict";var e=s(require("./js/refs")),r=s(require("./js/menu")),u=s(require("./js/switchTheme"));function s(e){return e&&e.__esModule?e:{default:e}}(0,r.default)(),(0,u.default)();
-},{"./js/refs":"VyiV","./js/menu":"i0CD","./js/switchTheme":"Sq5u"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10/src.6394d811.js.map
+},{"./refs":"VyiV"}],"clu1":[function(require,module,exports) {
+
+},{}],"Focm":[function(require,module,exports) {
+"use strict";var e=u(require("./js/refs")),s=u(require("./js/menu")),r=u(require("./js/switchTheme"));function u(e){return e&&e.__esModule?e:{default:e}}require("./sass/main.scss"),(0,s.default)(),(0,r.default)();
+},{"./js/refs":"VyiV","./js/menu":"i0CD","./js/switchTheme":"Sq5u","./sass/main.scss":"clu1"}]},{},["Focm"], null)
+//# sourceMappingURL=/goit-js-hw-10/src.b2390826.js.map
